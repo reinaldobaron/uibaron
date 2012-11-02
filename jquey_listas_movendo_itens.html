@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="styles/style.css" type="text/css" />
+	<title>Testes Listas</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	
+	<script language="javascript">
+	  function mudaLista(){ 
+	 var origem = $('#select1').find('option').filter(':selected').text();
+	 $('#select2').append('<option value='+origem+' selected="selected">'+origem+'</option>');
+	 $("select#select1 option[selected='true']").remove();
+	  }
+	</script>
+</head>
+
+
+<body>
+
+<form id="frm" name="frm">
+<select id="select1" multiple="multiple">
+<option value="1">Item1</option>
+<option value="2">Item2</option>
+<option value="3">Item3</option>
+</select>
+
+<a href="#" id="mover" onClick="mudaLista()" >Mover</a>
+
+<select id="select2" multiple="multiple" class="tamanhoSelect">
+
+</select>
+</form>
+
+</body>
+</html>

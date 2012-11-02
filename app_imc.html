@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/listaStyle.css" type="text/css" />
+<title>App IMC</title>
+	<script src="js/app_imc.js"></script>
+</head>
+
+
+<body>
+
+<form id="formIMC">
+    <fieldset>
+        <legend> <strong>IMC = peso / (altura)²</strong></legend>
+        
+        <label for="peso">Peso:</label>
+        <input type="text" name="peso" />
+        
+        <label for="metros">Metros:</label>
+        <input type="text" name="metros" />
+        
+        <label for="cm">Centimetros:</label>
+        <input type="text" name="cm" />
+        
+        <label for="imc">IMC:</label>
+        <input type="text" name="imc" disabled="disabled" />
+        
+      <input type="button" name="btnCalc" id="btnCalc" value="Calcular"  onclick="calcularIMC();" />
+    </fieldset>
+</form>
+<p>&nbsp;</p>
+
+<table>
+  <thead>
+    <tr>
+      <td><strong>Resultado</strong></td>
+      <td><strong>Situação</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abaixo de 17</td>
+      <td>Muito abaixo do <em>peso</em></td>
+    </tr>
+    <tr>
+      <td>Entre 17 e 18,49</td>
+      <td>Abaixo do <em>peso</em></td>
+    </tr>
+    <tr>
+      <td>Entre 18,5 e 24,99</td>
+      <td><em>Peso</em> normal</td>
+    </tr>
+    <tr>
+      <td>Entre 25 e 29,99</td>
+      <td>Acima do <em>peso</em></td>
+    </tr>
+    <tr>
+      <td>Entre 30 e 34,99</td>
+      <td><em>Obesidade</em> I</td>
+    </tr>
+    <tr>
+      <td>Entre 35 e 39,99</td>
+      <td><em>Obesidade</em> II (severa)</td>
+    </tr>
+    <tr>
+      <td>Acima de 40</td>
+      <td><em>Obesidade</em> III (mórbida)</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
