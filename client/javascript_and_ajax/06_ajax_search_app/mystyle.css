@@ -56,10 +56,10 @@ body {
 	overflow: hidden;
 	border-bottom: 1px dotted #CCC;
 	
-	-webkit-animation: myanim 1s;
-	-moz-animation: myanim 1s;
-	-o-animation: myanim 1s;
-	animation: myanim 1s;
+	-webkit-animation: animacao 1s;
+	-moz-animation: animacao 1s;
+	-o-animation: animacao 1s;
+	animation: animacao 1s;
 	
 	-webkit-transition: height 0.3s ease-out;
 	-moz-transition: height 0.3s ease-out;
@@ -95,22 +95,22 @@ body {
 	border-radius: 10px;
 }
 
-@-webkit-keyframes myanim {
+@-webkit-keyframes animacao {
 	0% { opacity: 0.3; }
 	100% { opacity: 1.0; }
 }
 
-@-moz-keyframes myanim {
+@-moz-keyframes animacao {
 	0% { opacity: 0.3; }
 	100% { opacity: 1.0; }
 }
 
-@-o-keyframes myanim {
+@-o-keyframes animacao {
 	0% { opacity: 0.3; }
 	100% { opacity: 1.0; }
 }
 
-@keyframes myanim {
+@keyframes animacao {
 	0% { opacity: 0.3; }
 	100% { opacity: 1.0; }
 }
