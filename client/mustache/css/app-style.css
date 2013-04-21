@@ -1,0 +1,10 @@
+.resume {
+    background-color: rgba(209,209,209,1);
+    color: rgba(255,80,74,1);
+	padding: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
